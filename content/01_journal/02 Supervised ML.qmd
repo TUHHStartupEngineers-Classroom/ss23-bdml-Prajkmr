@@ -1,7 +1,7 @@
 ---
 title: "02 Supervised ML"
 author: "Prajwal Kumar,Koretagere Vijay Kumar"
-date: "2022-05-20"
+date: "2023-05-15"
 output:
   html_document:
     toc: true
@@ -16,9 +16,6 @@ output:
 
 In this session we did not use the recipes packages to prepare our data. This is going to be your challenge. For further information take a look at the last session or just use google. Prepare the data for the models with the steps provided below. Remember, you don’t need to set the flags by yourself (see all_nominal()).
 # Libraries
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
-```
 ```{r}
 # install packages
 # Standard

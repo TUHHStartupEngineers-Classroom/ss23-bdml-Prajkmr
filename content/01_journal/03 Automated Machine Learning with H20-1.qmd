@@ -1,7 +1,7 @@
 ---
 title: "03 Automated Machine Learning with H20-1"
 author: "Prajwal Kumar,Koretagere Vijay Kumar"
-date: "2022-05-21"
+date: "2023-05-15"
 
 ---
 # Task
@@ -376,24 +376,24 @@ employee_attrition_tbl %>%
 
 ### Q1.What can you deduce about the interaction between Monthly Income and Attrition?
 
-(a)Those that are leaving the company have a higher Monthly Income\n
-\n(b)That those are staying have a lower Monthly Income
-\n(c)Those that are leaving have a lower Monthly Income
-<mark>\n(d)It's difficult to deduce anything based on the visualization</mark>
+* (a)Those that are leaving the company have a higher Monthly Income
+* (b)That those are staying have a lower Monthly Income
+* (c)Those that are leaving have a lower Monthly Income
+* <mark>(d)It's difficult to deduce anything based on the visualization</mark>
 
 
 ### Q2.What can you deduce about the interaction between Percent Salary Hike and Attrition?
 
-\n(a)Those that are leaving the company have a higher Percent Salary Hike
-\n(b)Those that are staying have a lower Percent Salary Hike
-\n(c)Those that are leaving have lower Percent Salary Hike
-<mark>\n(d)It's difficult to deduce anything based on the visualization</mark>
+* (a)Those that are leaving the company have a higher Percent Salary Hike
+* (b)Those that are staying have a lower Percent Salary Hike
+* (c)Those that are leaving have lower Percent Salary Hike
+* <mark>(d)It's difficult to deduce anything based on the visualization</mark>
 
 ### Q3.What can you deduce about the interaction between Stock Option Level and Attrition?
 
-\n(a)Those that are leaving the company have a higher stock option level
-<mark>\n(b)Those that are staying have a higher stock option level</mark>
-\n(c)It's difficult to deduce anything based on the visualization
+* (a)Those that are leaving the company have a higher stock option level
+* <mark>(b)Those that are staying have a higher stock option level</mark>
+* (c)It's difficult to deduce anything based on the visualization
 
 ## Survey Results: Satisfaction level, Work Life Balance
 
@@ -406,16 +406,16 @@ employee_attrition_tbl %>%
 
 ### Q4.What can you deduce about the interaction between Environment Satisfaction and Attrition?
 
-\n(a)A higher proportion of those leaving have a low environment satisfaction level
-<mark>\n(b)A higher proportion of those leaving have a high environment satisfaction level</mark>
-\n(c)It's difficult to deduce anything based on the visualization
+* (a)A higher proportion of those leaving have a low environment satisfaction level
+* <mark>(b)A higher proportion of those leaving have a high environment satisfaction level</mark>
+* (c)It's difficult to deduce anything based on the visualization
 
 ### Q5.What can you deduce about the interaction between Work Life Balance and Attrition
 
-\n(a)Those that are leaving have higher density of 2's and 3's
-\n(b)Those that are staying have a higher density of 2's and 3's
-\n(c)Those that are staying have a lower density of 2's and 3's
-<mark>\n(d)It's difficult to deduce anything based on the visualization</mark>
+* (a)Those that are leaving have higher density of 2's and 3's
+* (b)Those that are staying have a higher density of 2's and 3's
+* (c)Those that are staying have a lower density of 2's and 3's
+<mark>* (d)It's difficult to deduce anything based on the visualization</mark>
 
 ##   Performance Data: Job Involvement, Performance Rating
 ```{r}
@@ -427,10 +427,10 @@ employee_attrition_tbl %>%
 
 ### Q6.What Can you deduce about the interaction between Job Involvement and Attrition?
 
-\n(a)Those that are leaving have a lower density of 3's and 4's
-\n(b)Those that are leaving have a lower density of 1's and 2's
-\n(c)Those that are staying have a lower density of 2's and 3's
-\n(d)It's difficult to deduce anything based on the visualization
+* (a)Those that are leaving have a lower density of 3's and 4's
+* (b)Those that are leaving have a lower density of 1's and 2's
+* (c)Those that are staying have a lower density of 2's and 3's
+* (d)It's difficult to deduce anything based on the visualization
 
 
 ##   Work-Life Features 
@@ -443,8 +443,8 @@ employee_attrition_tbl %>%
 
 ### Q7.What can you deduce about the interaction between Over Time and Attrition?
 
-\n(a)The proportion of those leaving that are working Over Time are high compared to those that are not leaving
-\n(b)The proportion of those staying that are working Over Time are high compared to those that are not staying
+* (a)The proportion of those leaving that are working Over Time are high compared to those that are not leaving
+* (b)The proportion of those staying that are working Over Time are high compared to those that are not staying
 
 ##   Training and Education
 ```{r}
@@ -456,9 +456,9 @@ employee_attrition_tbl %>%
 
 ### Q8.What can you deduce about the interaction between Training Times Last Year and Attrition
 
-\n(a)People that leave tend to have more annual trainings
-\n(b)People that leave tend to have less annual trainings
-\n(c)It's difficult to deduce anything based on the visualization
+* (a)People that leave tend to have more annual trainings
+* (b)People that leave tend to have less annual trainings
+* (c)It's difficult to deduce anything based on the visualization
 
 ##   Time-Based Features: Years at company, years in current role
 ```{r}
@@ -470,12 +470,12 @@ employee_attrition_tbl %>%
 
 ### Q9.What can you deduce about the interaction between Years At Company and Attrition
 
-\n(a)People that leave tend to have more working years at the company
-\n(b)People that leave tend to have less working years at the company
-\n(c)It's difficult to deduce anything based on the visualization
+* (a)People that leave tend to have more working years at the company
+* (b)People that leave tend to have less working years at the company
+* (c)It's difficult to deduce anything based on the visualization
 
 ### Q10.What can you deduce about the interaction between Years Since Last Promotion and Attrition?
 
-\n(a)Those that are leaving have more years since last promotion than those that are staying
-\n(b)Those that are leaving have fewer years since last promotion than those that are staying
-\n(c)It's difficult to deduce anything based on the visualization
+* (a)Those that are leaving have more years since last promotion than those that are staying
+* (b)Those that are leaving have fewer years since last promotion than those that are staying
+* (c)It's difficult to deduce anything based on the visualization

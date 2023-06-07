@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.2.335">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Prajwal Kumar,Koretagere Vijay Kumar">
-<meta name="dcterms.date" content="2022-05-21">
+<meta name="dcterms.date" content="2023-05-15">
 <title>MyLabJournal - 03 Automated Machine Learning with H20-1</title>
 <style>
 code{white-space: pre-wrap;}
@@ -165,6 +165,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="dropdown-item" href="../../content/01_journal/04 Automated Machine Learning with H20-2.html">
  <span class="dropdown-text">04 Automated Machine Learning with H20-2</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/01_journal/05 Performance Measures.html">
+ <span class="dropdown-text">05 Performance Measures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/01_journal/06 LIME.qmd">
+ <span class="dropdown-text">06 LIME</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/01_journal/04 Automated Machine Learning with H20-2.html">
+ <span class="dropdown-text">04 Automated Machine Learning with H20-2</span></a>
+  </li>  
     </ul>
 </li>
   <li class="nav-item">
@@ -234,7 +246,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 21, 2022</p>
+      <p class="date">May 15, 2023</p>
     </div>
   </div>
   
@@ -774,12 +786,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q1.what-can-you-deduce-about-the-interaction-between-monthly-income-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q1.what-can-you-deduce-about-the-interaction-between-monthly-income-and-attrition">Q1.What can you deduce about the interaction between Monthly Income and Attrition?</h3>
-<p>(a)Those that are leaving the company have a higher Monthly Income (b)That those are staying have a lower Monthly Income (c)Those that are leaving have a lower Monthly Income <mark>(d)It’s difficult to deduce anything based on the visualization</mark></p>
-</section><section id="q2.what-can-you-deduce-about-the-interaction-between-percent-salary-hike-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q2.what-can-you-deduce-about-the-interaction-between-percent-salary-hike-and-attrition">Q2.What can you deduce about the interaction between Percent Salary Hike and Attrition?</h3>
-<p>(a)Those that are leaving the company have a higher Percent Salary Hike (b)Those that are staying have a lower Percent Salary Hike (c)Those that are leaving have lower Percent Salary Hike <mark>(d)It’s difficult to deduce anything based on the visualization</mark></p>
-</section><section id="q3.what-can-you-deduce-about-the-interaction-between-stock-option-level-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q3.what-can-you-deduce-about-the-interaction-between-stock-option-level-and-attrition">Q3.What can you deduce about the interaction between Stock Option Level and Attrition?</h3>
-<p>(a)Those that are leaving the company have a higher stock option level <mark>(b)Those that are staying have a higher stock option level</mark> (c)It’s difficult to deduce anything based on the visualization</p>
-</section></section><section id="survey-results-satisfaction-level-work-life-balance" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="survey-results-satisfaction-level-work-life-balance">
+<ul>
+<li>(a)Those that are leaving the company have a higher Monthly Income</li>
+<li>(b)That those are staying have a lower Monthly Income</li>
+<li>(c)Those that are leaving have a lower Monthly Income</li>
+<li><mark>(d)It’s difficult to deduce anything based on the visualization</mark></li>
+</ul></section><section id="q2.what-can-you-deduce-about-the-interaction-between-percent-salary-hike-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q2.what-can-you-deduce-about-the-interaction-between-percent-salary-hike-and-attrition">Q2.What can you deduce about the interaction between Percent Salary Hike and Attrition?</h3>
+<ul>
+<li>(a)Those that are leaving the company have a higher Percent Salary Hike</li>
+<li>(b)Those that are staying have a lower Percent Salary Hike</li>
+<li>(c)Those that are leaving have lower Percent Salary Hike</li>
+<li><mark>(d)It’s difficult to deduce anything based on the visualization</mark></li>
+</ul></section><section id="q3.what-can-you-deduce-about-the-interaction-between-stock-option-level-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q3.what-can-you-deduce-about-the-interaction-between-stock-option-level-and-attrition">Q3.What can you deduce about the interaction between Stock Option Level and Attrition?</h3>
+<ul>
+<li>(a)Those that are leaving the company have a higher stock option level</li>
+<li><mark>(b)Those that are staying have a higher stock option level</mark></li>
+<li>(c)It’s difficult to deduce anything based on the visualization</li>
+</ul></section></section><section id="survey-results-satisfaction-level-work-life-balance" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="survey-results-satisfaction-level-work-life-balance">
 <span class="header-section-number">3.2</span> Survey Results: Satisfaction level, Work Life Balance</h2>
 <div class="cell" data-hash="03-Automated-Machine-Learning-with-H20-1_cache/html/unnamed-chunk-22_a8d4eba58d37ecf3d76fbb866dd489a3">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>employee_attrition_tbl <span class="sc">%&gt;%</span></span>
@@ -793,10 +816,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q4.what-can-you-deduce-about-the-interaction-between-environment-satisfaction-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q4.what-can-you-deduce-about-the-interaction-between-environment-satisfaction-and-attrition">Q4.What can you deduce about the interaction between Environment Satisfaction and Attrition?</h3>
-<p>(a)A higher proportion of those leaving have a low environment satisfaction level <mark>(b)A higher proportion of those leaving have a high environment satisfaction level</mark> (c)It’s difficult to deduce anything based on the visualization</p>
-</section><section id="q5.what-can-you-deduce-about-the-interaction-between-work-life-balance-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q5.what-can-you-deduce-about-the-interaction-between-work-life-balance-and-attrition">Q5.What can you deduce about the interaction between Work Life Balance and Attrition</h3>
-<p>(a)Those that are leaving have higher density of 2’s and 3’s (b)Those that are staying have a higher density of 2’s and 3’s (c)Those that are staying have a lower density of 2’s and 3’s <mark>(d)It’s difficult to deduce anything based on the visualization</mark></p>
-</section></section><section id="performance-data-job-involvement-performance-rating" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="performance-data-job-involvement-performance-rating">
+<ul>
+<li>(a)A higher proportion of those leaving have a low environment satisfaction level</li>
+<li><mark>(b)A higher proportion of those leaving have a high environment satisfaction level</mark></li>
+<li>(c)It’s difficult to deduce anything based on the visualization</li>
+</ul></section><section id="q5.what-can-you-deduce-about-the-interaction-between-work-life-balance-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q5.what-can-you-deduce-about-the-interaction-between-work-life-balance-and-attrition">Q5.What can you deduce about the interaction between Work Life Balance and Attrition</h3>
+<ul>
+<li>(a)Those that are leaving have higher density of 2’s and 3’s</li>
+<li>(b)Those that are staying have a higher density of 2’s and 3’s</li>
+<li>(c)Those that are staying have a lower density of 2’s and 3’s <mark>* (d)It’s difficult to deduce anything based on the visualization</mark>
+</li>
+</ul></section></section><section id="performance-data-job-involvement-performance-rating" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="performance-data-job-involvement-performance-rating">
 <span class="header-section-number">3.3</span> Performance Data: Job Involvement, Performance Rating</h2>
 <div class="cell" data-hash="03-Automated-Machine-Learning-with-H20-1_cache/html/unnamed-chunk-23_6d0abb7d8da81e9de541bcaf3ed49091">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>employee_attrition_tbl <span class="sc">%&gt;%</span></span>
@@ -810,8 +840,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q6.what-can-you-deduce-about-the-interaction-between-job-involvement-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q6.what-can-you-deduce-about-the-interaction-between-job-involvement-and-attrition">Q6.What Can you deduce about the interaction between Job Involvement and Attrition?</h3>
-<p>(a)Those that are leaving have a lower density of 3’s and 4’s (b)Those that are leaving have a lower density of 1’s and 2’s (c)Those that are staying have a lower density of 2’s and 3’s (d)It’s difficult to deduce anything based on the visualization</p>
-</section></section><section id="work-life-features" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="work-life-features">
+<ul>
+<li>(a)Those that are leaving have a lower density of 3’s and 4’s</li>
+<li>(b)Those that are leaving have a lower density of 1’s and 2’s</li>
+<li>(c)Those that are staying have a lower density of 2’s and 3’s</li>
+<li>(d)It’s difficult to deduce anything based on the visualization</li>
+</ul></section></section><section id="work-life-features" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="work-life-features">
 <span class="header-section-number">3.4</span> Work-Life Features</h2>
 <div class="cell" data-hash="03-Automated-Machine-Learning-with-H20-1_cache/html/unnamed-chunk-24_d05da2d27ace2368cdc36ffefe88f12d">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a>employee_attrition_tbl <span class="sc">%&gt;%</span></span>
@@ -825,8 +859,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q7.what-can-you-deduce-about-the-interaction-between-over-time-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q7.what-can-you-deduce-about-the-interaction-between-over-time-and-attrition">Q7.What can you deduce about the interaction between Over Time and Attrition?</h3>
-<p>(a)The proportion of those leaving that are working Over Time are high compared to those that are not leaving (b)The proportion of those staying that are working Over Time are high compared to those that are not staying</p>
-</section></section><section id="training-and-education" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="training-and-education">
+<ul>
+<li>(a)The proportion of those leaving that are working Over Time are high compared to those that are not leaving</li>
+<li>(b)The proportion of those staying that are working Over Time are high compared to those that are not staying</li>
+</ul></section></section><section id="training-and-education" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="training-and-education">
 <span class="header-section-number">3.5</span> Training and Education</h2>
 <div class="cell" data-hash="03-Automated-Machine-Learning-with-H20-1_cache/html/unnamed-chunk-25_63d56ffeaedf7628ac4134bd9755e4fc">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>employee_attrition_tbl <span class="sc">%&gt;%</span></span>
@@ -840,8 +876,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q8.what-can-you-deduce-about-the-interaction-between-training-times-last-year-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q8.what-can-you-deduce-about-the-interaction-between-training-times-last-year-and-attrition">Q8.What can you deduce about the interaction between Training Times Last Year and Attrition</h3>
-<p>(a)People that leave tend to have more annual trainings (b)People that leave tend to have less annual trainings (c)It’s difficult to deduce anything based on the visualization</p>
-</section></section><section id="time-based-features-years-at-company-years-in-current-role" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="time-based-features-years-at-company-years-in-current-role">
+<ul>
+<li>(a)People that leave tend to have more annual trainings</li>
+<li>(b)People that leave tend to have less annual trainings</li>
+<li>(c)It’s difficult to deduce anything based on the visualization</li>
+</ul></section></section><section id="time-based-features-years-at-company-years-in-current-role" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="time-based-features-years-at-company-years-in-current-role">
 <span class="header-section-number">3.6</span> Time-Based Features: Years at company, years in current role</h2>
 <div class="cell" data-hash="03-Automated-Machine-Learning-with-H20-1_cache/html/unnamed-chunk-26_ab5fb229df7fb3d03fe0930d88736f5a">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a>employee_attrition_tbl <span class="sc">%&gt;%</span></span>
@@ -855,9 +894,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <section id="q9.what-can-you-deduce-about-the-interaction-between-years-at-company-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q9.what-can-you-deduce-about-the-interaction-between-years-at-company-and-attrition">Q9.What can you deduce about the interaction between Years At Company and Attrition</h3>
-<p>(a)People that leave tend to have more working years at the company (b)People that leave tend to have less working years at the company (c)It’s difficult to deduce anything based on the visualization</p>
-</section><section id="q10.what-can-you-deduce-about-the-interaction-between-years-since-last-promotion-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q10.what-can-you-deduce-about-the-interaction-between-years-since-last-promotion-and-attrition">Q10.What can you deduce about the interaction between Years Since Last Promotion and Attrition?</h3>
-<p>(a)Those that are leaving have more years since last promotion than those that are staying (b)Those that are leaving have fewer years since last promotion than those that are staying (c)It’s difficult to deduce anything based on the visualization</p>
+<ul>
+<li>(a)People that leave tend to have more working years at the company</li>
+<li>(b)People that leave tend to have less working years at the company</li>
+<li>(c)It’s difficult to deduce anything based on the visualization</li>
+</ul></section><section id="q10.what-can-you-deduce-about-the-interaction-between-years-since-last-promotion-and-attrition" class="level3"><h3 class="anchored" data-anchor-id="q10.what-can-you-deduce-about-the-interaction-between-years-since-last-promotion-and-attrition">Q10.What can you deduce about the interaction between Years Since Last Promotion and Attrition?</h3>
+<ul>
+<li>(a)Those that are leaving have more years since last promotion than those that are staying</li>
+<li>(b)Those that are leaving have fewer years since last promotion than those that are staying</li>
+<li>(c)It’s difficult to deduce anything based on the visualization</li>
+</ul>
 
 
 </section></section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -1109,7 +1155,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":true,"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});</script>
+<script>var lightboxQuarto = GLightbox({"loop":true,"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});</script>
 
 
 </body></html>

@@ -5,11 +5,21 @@ author: "Prajwal Kumar,Koretagere Vijay Kumar"
 ---
 
 ![](assets/logo/TIE_logo.svg){width=80% fig-align="center"}
+This is my lab journal for the course *Business Decisions with Machine Learning* at the Institute of Entrepreneurship. 
 
-This is a template example for lab journaling. Students in the data science courses at the Institute of Entrepreneurship will use this template to learn R for business analytics. Students can replace this text as they wish.
+## This journal contains 6 challenges with partial solutions
 
-## How to use
+1. Machine Learning Fundamentals.
 
-1. Accept the assignment and get your own github repo.
+2. Supervised ML.
 
-2. Blog/
+3. Automated Machine Learning with H20-1.
+
+4. Automated Machine Learning with H20-2.
+
+5. Performance Measures
+
+6. LIME
+
+
+Please navigate to the respective page by using the drop down menu under the "Journal" button on the Header bar on this webpage. 

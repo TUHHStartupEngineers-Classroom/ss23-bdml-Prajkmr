@@ -26,8 +26,6 @@ website:
             file: content/01_journal/05 Performance Measures.qmd
           - text: "06 LIME"
             file: content/01_journal/06 LIME.qmd
-          - text: "04 Automated Machine Learning with H20-2"
-            file: content/01_journal/04 Automated Machine Learning with H20-2.qmd
       - text: "Class notes"
         file: content/02_notes/05_class_notes.qmd
       - text: "Links"
